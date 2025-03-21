@@ -1,0 +1,8 @@
+{
+  "task_sequence": [
+    {"step": "analyze_input", "duration": 0.2},
+    {"step": "select_execution_mode", "duration": 0.1},
+    {"step": "execute_task", "duration": 0.5},
+    {"step": "apply_refinement", "duration": 0.3}
+  ]
+}
