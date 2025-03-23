@@ -44,3 +44,17 @@ def run_validation():
 
 if __name__ == "__main__":
     run_validation()
+def validate_all_files():
+    required_files = [
+        "trigger.py", "auto_sync.py", "sync_to_notion.py",
+        "redeploy.py", "setup_sus_wei.py", "validate.py",
+        "System_Memory/sus_memory.json", "Refinement_Logs/cycle_summary.log",
+        "SUS-Control-Dashboard/README.md", "sus_blueprint.md",
+        "SUS-REDEPLOY.md", "execution_flow.md"
+    ]
+    all_valid = True
+    for f in required_files:
+        if not os.path.exists(f):
+            print(f"❌ MISSING: {f}")
+            all_valid = False
+    return all_valid
