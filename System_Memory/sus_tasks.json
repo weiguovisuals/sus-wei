@@ -1,4 +1,23 @@
-
-- [ ] Your idea here
-
-- [ ] Your idea here
+{
+  "task_queue": [
+    {
+      "id": "task-001",
+      "description": "Finalize SUS-Control-Dashboard integration into CLI + GUI",
+      "status": "in-progress",
+      "priority": "high"
+    },
+    {
+      "id": "task-002",
+      "description": "Auto-sync all Blueprint & Strategy files to Notion",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "task-003",
+      "description": "Simulate end-to-end terminal-based test run (setup > validate)",
+      "status": "queued",
+      "priority": "high"
+    }
+  ],
+  "last_updated": "2025-03-24T03:20:00"
+}

@@ -1,8 +1,27 @@
 {
-  "task_sequence": [
-    {"step": "analyze_input", "duration": 0.2},
-    {"step": "select_execution_mode", "duration": 0.1},
-    {"step": "execute_task", "duration": 0.5},
-    {"step": "apply_refinement", "duration": 0.3}
-  ]
+  "structure_version": "1.0",
+  "last_updated": "2025-03-24",
+  "temporal_mappings": {
+    "Phase_1": {
+      "title": "System Bootstrap & Memory Initialization",
+      "triggered": true,
+      "timestamp": "2025-03-21T12:00:00"
+    },
+    "Phase_2": {
+      "title": "File Logic Restoration + Validation",
+      "triggered": true,
+      "timestamp": "2025-03-22T18:45:00"
+    },
+    "Phase_3": {
+      "title": "Execution Loop Optimization",
+      "triggered": true,
+      "timestamp": "2025-03-23T10:30:00"
+    },
+    "Phase_4": {
+      "title": "Variant Framework Pause + Final File Lock",
+      "triggered": false,
+      "trigger_condition": "Manual Greenlight"
+    }
+  },
+  "next_action": "Trigger Phase 4 after audit confirmation"
 }
